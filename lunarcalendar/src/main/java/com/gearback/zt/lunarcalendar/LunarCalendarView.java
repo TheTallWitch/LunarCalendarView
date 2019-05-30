@@ -42,50 +42,50 @@ public class LunarCalendarView extends FrameLayout {
         TypedArray typedArray = context.obtainStyledAttributes(attrs,
                 R.styleable.LunarCalendarView, 0, 0);
 
-        if(typedArray.hasValue(R.styleable.LunarCalendarView_pcv_typefacePath)) {
+        if(typedArray.hasValue(R.styleable.LunarCalendarView_lcv_typefacePath)) {
             Typeface typeface = Typeface.createFromAsset(context.getAssets(),
-                    typedArray.getString(R.styleable.LunarCalendarView_pcv_typefacePath));
+                    typedArray.getString(R.styleable.LunarCalendarView_lcv_typefacePath));
             if (typeface != null)
                 mCalendarHandler.setTypeface(typeface);
         }
-        if(typedArray.hasValue(R.styleable.LunarCalendarView_pcv_headersTypefacePath)) {
+        if(typedArray.hasValue(R.styleable.LunarCalendarView_lcv_headersTypefacePath)) {
             Typeface typeface = Typeface.createFromAsset(context.getAssets(),
-                    typedArray.getString(R.styleable.LunarCalendarView_pcv_headersTypefacePath));
+                    typedArray.getString(R.styleable.LunarCalendarView_lcv_headersTypefacePath));
             if (typeface != null)
                 mCalendarHandler.setHeadersTypeface(typeface);
         }
         mCalendarHandler.setDaysFontSize(typedArray.getDimensionPixelSize(
-                R.styleable.LunarCalendarView_pcv_fontSize,
+                R.styleable.LunarCalendarView_lcv_fontSize,
                 25));
         mCalendarHandler.setHeadersFontSize(typedArray.getDimensionPixelSize(
-                R.styleable.LunarCalendarView_pcv_headersFontSize,
+                R.styleable.LunarCalendarView_lcv_headersFontSize,
                 20));
         mCalendarHandler.setTodayBackground(typedArray.getResourceId(
-                R.styleable.LunarCalendarView_pcv_todayBackground,
+                R.styleable.LunarCalendarView_lcv_todayBackground,
                 mCalendarHandler.getTodayBackground()));
         mCalendarHandler.setSelectedDayBackground(typedArray.getResourceId(
-                R.styleable.LunarCalendarView_pcv_selectedDayBackground,
+                R.styleable.LunarCalendarView_lcv_selectedDayBackground,
                 mCalendarHandler.getSelectedDayBackground()));
         mCalendarHandler.setColorDayName(typedArray.getColor(
-                R.styleable.LunarCalendarView_pcv_colorDayName,
+                R.styleable.LunarCalendarView_lcv_colorDayName,
                 mCalendarHandler.getColorDayName()));
         mCalendarHandler.setColorBackground(typedArray.getColor(
-                R.styleable.LunarCalendarView_pcv_colorBackground,
+                R.styleable.LunarCalendarView_lcv_colorBackground,
                 mCalendarHandler.getColorHolidaySelected()));
         mCalendarHandler.setColorHolidaySelected(typedArray.getColor(
-                R.styleable.LunarCalendarView_pcv_colorHolidaySelected,
+                R.styleable.LunarCalendarView_lcv_colorHolidaySelected,
                 mCalendarHandler.getColorHolidaySelected()));
         mCalendarHandler.setColorHoliday(typedArray.getColor(
-                R.styleable.LunarCalendarView_pcv_colorHoliday,
+                R.styleable.LunarCalendarView_lcv_colorHoliday,
                 mCalendarHandler.getColorHoliday()));
         mCalendarHandler.setColorNormalDaySelected(typedArray.getColor(
-                R.styleable.LunarCalendarView_pcv_colorNormalDaySelected,
+                R.styleable.LunarCalendarView_lcv_colorNormalDaySelected,
                 mCalendarHandler.getColorNormalDaySelected()));
         mCalendarHandler.setColorNormalDay(typedArray.getColor(
-                R.styleable.LunarCalendarView_pcv_colorNormalDay,
+                R.styleable.LunarCalendarView_lcv_colorNormalDay,
                 mCalendarHandler.getColorNormalDay()));
         mCalendarHandler.setColorEventUnderline(typedArray.getColor(
-                R.styleable.LunarCalendarView_pcv_eventUnderlineColor,
+                R.styleable.LunarCalendarView_lcv_eventUnderlineColor,
                 mCalendarHandler.getColorEventUnderline()));
         try {
             mCalendarFragment = CalendarFragment.class.newInstance();

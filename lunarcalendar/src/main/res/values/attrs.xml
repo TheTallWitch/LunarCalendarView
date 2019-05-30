@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <declare-styleable name="LunarCalendarView">
-        <attr name="pcv_typefacePath" format="string"></attr>
-        <attr name="pcv_headersTypefacePath" format="string"></attr>
-        <attr name="pcv_colorBackground" format="color"></attr>
-        <attr name="pcv_colorHoliday" format="color"></attr>
-        <attr name="pcv_colorHolidaySelected" format="color"></attr>
-        <attr name="pcv_colorNormalDaySelected" format="color"></attr>
-        <attr name="pcv_colorNormalDay" format="color"></attr>
-        <attr name="pcv_colorDayName" format="color"></attr>
-        <attr name="pcv_eventUnderlineColor" format="color"></attr>
-        <attr name="pcv_todayBackground" format="reference"></attr>
-        <attr name="pcv_selectedDayBackground" format="reference"></attr>
-        <attr name="pcv_fontSize" format="dimension"></attr>
-        <attr name="pcv_headersFontSize" format="dimension"></attr>
+        <attr name="lcv_typefacePath" format="string"/>
+        <attr name="lcv_headersTypefacePath" format="string"/>
+        <attr name="lcv_colorBackground" format="color"/>
+        <attr name="lcv_colorHoliday" format="color"/>
+        <attr name="lcv_colorHolidaySelected" format="color"/>
+        <attr name="lcv_colorNormalDaySelected" format="color"/>
+        <attr name="lcv_colorNormalDay" format="color"/>
+        <attr name="lcv_colorDayName" format="color"/>
+        <attr name="lcv_eventUnderlineColor" format="color"/>
+        <attr name="lcv_todayBackground" format="reference"/>
+        <attr name="lcv_selectedDayBackground" format="reference"/>
+        <attr name="lcv_fontSize" format="dimension"/>
+        <attr name="lcv_headersFontSize" format="dimension"/>
     </declare-styleable>
 </resources>
